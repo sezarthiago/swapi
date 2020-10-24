@@ -1,9 +1,13 @@
 import React from 'react';
 import Style from './BackButton.module.scss';
 
-function BackButton() {
+type Props = {
+  onClick: () => void;
+};
+
+function BackButton({ onClick }: Props) {
   return (
-    <button type="button" className={Style.backButton}>
+    <button type="button" className={Style.backButton} onClick={onClick}>
       <svg
         width="31"
         height="26"
