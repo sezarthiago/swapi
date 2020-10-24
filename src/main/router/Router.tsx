@@ -5,7 +5,7 @@ import makeMaster from '../factories/pages/master/MasterFactory';
 
 export default function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/master/:master" component={makeMaster} />
         <Route path="/" component={makeHome} />
