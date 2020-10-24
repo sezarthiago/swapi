@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, BrowserRouter, Route } from 'react-router-dom';
-import Home from '../pages/home/Home';
-import Master from '../pages/master/Master';
+import Master from '../../presentation/pages/master/Master';
+import makeHome from '../factories/pages/home/HomeFactory';
 
 export default function Router() {
   return (
@@ -10,9 +10,7 @@ export default function Router() {
         <Route path="/master">
           <Master />
         </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Route path="/" component={makeHome} />
       </Switch>
     </BrowserRouter>
   );
