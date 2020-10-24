@@ -1,7 +1,8 @@
 import React from 'react';
+import Home from './presentation/pages/home/Home';
 
 function App() {
-  return <div>hello swapi</div>;
+  return <Home />;
 }
 
 export default App;

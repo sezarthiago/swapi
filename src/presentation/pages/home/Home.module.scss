@@ -1,0 +1,63 @@
+.home {
+  color: #2c97d1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.welcomeWrap {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: 1px;
+}
+
+.welcome {
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.challenge {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+
+.buttonWrap {
+  flex-grow: 0;
+  flex-basis: 50px;
+}
+
+.button {
+  width: 189px;
+  height: 56px;
+  display: block;
+  border: none;
+  outline: none;
+  background: #2c97d1;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    box-shadow: #b4b4b4 0 1px 8px;
+  }
+}
+
+.footer {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
