@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.53192ca1.chunk.css",
-    "main.js": "/static/js/main.7a276b05.chunk.js",
-    "main.js.map": "/static/js/main.7a276b05.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f94344d6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f94344d6.js.map",
-    "static/js/2.6d105a01.chunk.js": "/static/js/2.6d105a01.chunk.js",
-    "static/js/2.6d105a01.chunk.js.map": "/static/js/2.6d105a01.chunk.js.map",
-    "static/js/3.62be92e2.chunk.js": "/static/js/3.62be92e2.chunk.js",
-    "static/js/3.62be92e2.chunk.js.map": "/static/js/3.62be92e2.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.53192ca1.chunk.css.map": "/static/css/main.53192ca1.chunk.css.map",
-    "static/js/2.6d105a01.chunk.js.LICENSE.txt": "/static/js/2.6d105a01.chunk.js.LICENSE.txt",
-    "static/media/darth-vader.5b59175e.png": "/static/media/darth-vader.5b59175e.png",
-    "static/media/luke-skywalker.7ac8850b.png": "/static/media/luke-skywalker.7ac8850b.png"
+    "main.css": "/swapi/static/css/main.53192ca1.chunk.css",
+    "main.js": "/swapi/static/js/main.1eb42429.chunk.js",
+    "main.js.map": "/swapi/static/js/main.1eb42429.chunk.js.map",
+    "runtime-main.js": "/swapi/static/js/runtime-main.c5087276.js",
+    "runtime-main.js.map": "/swapi/static/js/runtime-main.c5087276.js.map",
+    "static/js/2.6d105a01.chunk.js": "/swapi/static/js/2.6d105a01.chunk.js",
+    "static/js/2.6d105a01.chunk.js.map": "/swapi/static/js/2.6d105a01.chunk.js.map",
+    "static/js/3.62be92e2.chunk.js": "/swapi/static/js/3.62be92e2.chunk.js",
+    "static/js/3.62be92e2.chunk.js.map": "/swapi/static/js/3.62be92e2.chunk.js.map",
+    "index.html": "/swapi/index.html",
+    "static/css/main.53192ca1.chunk.css.map": "/swapi/static/css/main.53192ca1.chunk.css.map",
+    "static/js/2.6d105a01.chunk.js.LICENSE.txt": "/swapi/static/js/2.6d105a01.chunk.js.LICENSE.txt",
+    "static/media/darth-vader.5b59175e.png": "/swapi/static/media/darth-vader.5b59175e.png",
+    "static/media/luke-skywalker.7ac8850b.png": "/swapi/static/media/luke-skywalker.7ac8850b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f94344d6.js",
+    "static/js/runtime-main.c5087276.js",
     "static/js/2.6d105a01.chunk.js",
     "static/css/main.53192ca1.chunk.css",
-    "static/js/main.7a276b05.chunk.js"
+    "static/js/main.1eb42429.chunk.js"
   ]
 }
