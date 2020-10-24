@@ -1,0 +1,23 @@
+.backButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 4px;
+  transition: background ease 0.1s;
+
+  &:hover {
+    background-color: #ffffff22;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 20px;
+    color: #ffffff;
+  }
+}
