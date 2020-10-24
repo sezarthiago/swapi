@@ -31,6 +31,7 @@
   "rules": {
     "linebreak-style": "off",
     "react/prop-types": "off",
+    "class-methods-use-this": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
