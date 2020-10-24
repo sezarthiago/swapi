@@ -43,7 +43,7 @@ function Home({ chooseMaster }: Props) {
           type="button"
           disabled={loading}
         >
-          START
+          <span>START</span>
         </button>
       </div>
       <div className={Style.footer} />
