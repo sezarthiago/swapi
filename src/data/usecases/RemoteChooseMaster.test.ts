@@ -11,6 +11,11 @@ const vader = { id: '4', name: 'vader' };
 const luke = { id: '1', name: 'luke' };
 const masters = [luke, vader];
 
+const mockHttpResponse = (body: any): any => ({
+  body,
+  statusCode: 200,
+});
+
 function makeSut() {
   const httpClient = new HttpClientSpy();
   jest
@@ -18,11 +23,11 @@ function makeSut() {
     .mockReturnValueOnce(
       new Promise((resolve) => {
         setTimeout(() => {
-          resolve(vader);
+          resolve(mockHttpResponse(vader));
         }, 20);
       })
     )
-    .mockReturnValueOnce(Promise.resolve(luke));
+    .mockReturnValueOnce(Promise.resolve(mockHttpResponse(luke)));
   const baseUrl = 'base-url';
   const sut = new RemoteChooseMaster(httpClient, baseUrl);
   return { sut, baseUrl };
