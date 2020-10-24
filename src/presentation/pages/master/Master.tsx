@@ -2,8 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Style from './Master.module.scss';
 import DarthVader from './darth-vader.png';
-import BackButton from '../../components/back-button/BackButton';
-import Header from '../../components/header/Header';
+import { BackButton, Header } from '../../components';
 
 function Master() {
   const history = useHistory();
