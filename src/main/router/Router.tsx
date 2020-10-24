@@ -7,7 +7,7 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/master">
+        <Route path="/master/:master">
           <Master />
         </Route>
         <Route path="/" component={makeHome} />
