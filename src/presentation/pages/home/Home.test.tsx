@@ -5,6 +5,7 @@ import { ChooseMaster } from '../../../domain/usecases/ChooseMaster';
 import { Master } from '../../../domain/models/Master';
 
 class ChooseMasterSpy implements ChooseMaster {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   choose(masters: Master[]): Promise<Master> {
     return Promise.resolve({ id: 'id', name: 'name' });
   }
