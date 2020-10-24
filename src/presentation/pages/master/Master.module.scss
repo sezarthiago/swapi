@@ -45,6 +45,10 @@
   line-height: 20px;
   cursor: pointer;
   color: #2a2a2a;
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .masterImage {
