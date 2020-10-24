@@ -18,12 +18,13 @@ function Home({ chooseMaster }: Props) {
     let master;
     try {
       master = await chooseMaster.choose(Masters);
+      setLoading(false);
       history.push(`/master/${dashString(master.name)}`);
     } catch (error) {
       // eslint-disable-next-line no-alert
       alert('Sorry, try again later!');
+      setLoading(false);
     }
-    setLoading(false);
   }
 
   return (
@@ -36,6 +37,7 @@ function Home({ chooseMaster }: Props) {
       </div>
       <div className={Style.buttonWrap}>
         <button
+          data-testid="button"
           onClick={handleStart}
           className={Style.button}
           type="button"

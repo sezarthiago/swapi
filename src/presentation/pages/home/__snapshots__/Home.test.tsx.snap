@@ -30,6 +30,7 @@ Object {
         >
           <button
             class="button"
+            data-testid="button"
             type="button"
           >
             START
@@ -67,6 +68,7 @@ Object {
       >
         <button
           class="button"
+          data-testid="button"
           type="button"
         >
           START
