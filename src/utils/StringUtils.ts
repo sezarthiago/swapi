@@ -2,5 +2,8 @@ function dashString(string: string) {
   return string.replace(/ /g, '-');
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export { dashString };
+function undashString(string: string) {
+  return string.replace(/-/g, ' ');
+}
+
+export { dashString, undashString };
