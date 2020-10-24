@@ -1,3 +1,7 @@
+export type HttpRequest = {
+  url: string;
+};
+
 export interface HttpClient {
-  get: (params: any) => Promise<any>;
+  get: (params: HttpRequest) => Promise<any>;
 }
