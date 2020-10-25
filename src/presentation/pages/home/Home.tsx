@@ -1,30 +1,17 @@
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import Masters from '../../../domain/data/Masters.json';
+import React from 'react';
 import Style from './Home.module.scss';
 import { ChooseMaster } from '../../../domain/usecases/ChooseMaster';
-import { dashString } from '../../../utils/StringUtils';
+import useMaster from '../../hooks/usMaster';
 
 type Props = {
   chooseMaster: ChooseMaster;
 };
 
 function Home({ chooseMaster }: Props) {
-  const [loading, setLoading] = useState<boolean>(false);
-  const history = useHistory();
+  const { loading, choose } = useMaster(chooseMaster);
 
-  async function handleStart() {
-    setLoading(true);
-    let master;
-    try {
-      master = await chooseMaster.choose(Masters);
-      setLoading(false);
-      history.push(`/master/${dashString(master.name)}`);
-    } catch (error) {
-      // eslint-disable-next-line no-alert
-      alert('Sorry, try again later!');
-      setLoading(false);
-    }
+  function handleStart() {
+    choose();
   }
 
   return (

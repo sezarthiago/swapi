@@ -1,13 +1,13 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import classnames from 'classnames';
 import Style from './Master.module.scss';
 import DarthVader from './images/darth-vader.png';
 import LukeSkywalker from './images/luke-skywalker.png';
 import { BackButton, Header } from '../../components';
-import { dashString, undashString } from '../../../utils/StringUtils';
+import { undashString } from '../../../utils/StringUtils';
 import { ChooseMaster } from '../../../domain/usecases/ChooseMaster';
-import Masters from '../../../domain/data/Masters.json';
+import useMaster from '../../hooks/usMaster';
 
 type Params = {
   master: string;
@@ -19,25 +19,15 @@ type Props = {
 
 function Master({ chooseMaster }: Props) {
   const history = useHistory();
-  const [loading, setLoading] = useState<boolean>(false);
   const { master } = useParams<Params>();
+  const { loading, choose } = useMaster(chooseMaster);
 
   function handleBack() {
     history.replace('/');
   }
 
-  async function handleChooseAgain() {
-    setLoading(true);
-    let newMmaster;
-    try {
-      newMmaster = await chooseMaster.choose(Masters);
-      setLoading(false);
-      history.push(`/master/${dashString(newMmaster.name)}`);
-    } catch (error) {
-      // eslint-disable-next-line no-alert
-      alert('Sorry, try again later!');
-      setLoading(false);
-    }
+  function handleChooseAgain() {
+    choose();
   }
 
   const masterClasses = classnames(Style.master, {
