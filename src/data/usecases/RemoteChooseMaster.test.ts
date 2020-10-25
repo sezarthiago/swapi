@@ -50,7 +50,7 @@ describe('RemoteChooseMaster', () => {
     const { sut, baseUrl } = makeSut();
     await sut.choose([luke]);
     expect(sut.httpClient.get).toHaveBeenCalledWith({
-      url: `${baseUrl}/${luke.id}`,
+      url: `${baseUrl}/${luke.id}/`,
     });
   });
 });
