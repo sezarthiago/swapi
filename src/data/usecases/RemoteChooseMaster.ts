@@ -8,7 +8,7 @@ export default class RemoteChooseMaster implements ChooseMaster {
   async choose(masters: Master[]): Promise<Master> {
     const promises = masters.map((master) =>
       this.httpClient.get({
-        url: `${this.url}/${master.id}`,
+        url: `${this.url}/${master.id}/`,
       })
     );
     const result = await Promise.race(promises);
